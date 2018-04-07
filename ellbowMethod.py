@@ -7,14 +7,12 @@ plt.style.use('ggplot')
 
 # Importing the dataset
 data = pd.read_csv('xclara.csv')
-print(data.shape)
-
 
 # Getting the values and plotting it
 f1 = data['V1'].values
 f2 = data['V2'].values
 X = np.array(list(zip(f1, f2)))
-plt.scatter(f1, f2, c='black', s=7)
+
 
 # k means determine k
 distortions = []
@@ -32,10 +30,6 @@ def k_Means(k, X):
 	C = np.array(list(zip(C_x, C_y)), dtype=np.float32)
 	#print(C)
 
-	# Plotting along with the Centroids
-	plt.scatter(f1, f2, c='#050505', s=7)
-	plt.scatter(C_x, C_y, marker='*', s=200, c='g')
-	
 	# To store the value of centroids when it updates
 	C_old = np.zeros(C.shape)
 	# Cluster Labels(0, 1, 2)
@@ -57,16 +51,28 @@ def k_Means(k, X):
 			C[i] = np.mean(points, axis=0)
 		error = dist(C, C_old, None)
 
-		
-	colors = ['r', 'g', 'b', 'y', 'c', 'm']
-	fig, ax = plt.subplots()
-
+	#calculating distortion
+	sse=0
 	for i in range(k):
 			points = np.array([X[j] for j in range(len(X)) if clusters[j] == i])
-			ax.scatter(points[:, 0], points[:, 1], s=7, c=colors[i])
-	ax.scatter(C[:, 0], C[:, 1], marker='*', s=200, c='#050505')
-	plt.show()				
-	
+			for x in np.nditer(points):
+				sse = sse + dist(C[i],x, None)
 			
+	distortions.append(sse)		
+			
+def num_of_clusters(X):
+	
+	K = range(1,6)
+	for k in K:
+		k_Means(k,X)
+	print(distortions)
+	# Plot the elbow
+	plt.figure(1)
+	plt.plot(K, distortions, 'bx-')
+	plt.xlabel('k')
+	plt.ylabel('Distortion')
+	plt.title('The Elbow Method showing the optimal k')
+	plt.show()	
+	
 
-k_Means(3,X)
+num_of_clusters(X)
