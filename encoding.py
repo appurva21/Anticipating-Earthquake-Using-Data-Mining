@@ -48,7 +48,6 @@ def encode(data, data_norm, labels):
 	dn5 = deNormalize(dn4, "Magnitude", "MagnitudeLow", "MagnitudeMid", "MagnitudeHigh",  0.21, 0.55)	#0.21 =5.5mw 0.55= 7.0mw
 
 	cluster_map = pd.DataFrame()
-	#cluster_map['data_index'] = data.index.values
 	cluster_map['NH'] = dn2['NH'].values
 	cluster_map['SH'] = dn2['SH'].values
 	cluster_map['Q1'] = dn2['Q1'].values
@@ -78,7 +77,7 @@ def write(cluster_map, number_of_clusters):
 
 		
 	#writing clusters to file
-	cl_filename = ["cluster0.csv", "cluster1.csv", "cluster2.csv"]
+	cl_filename = ["Data_Cluster0.csv", "Data_Cluster1.csv", "Data_Cluster2.csv"]
 	for i in range(number_of_clusters):
 		clusters[i].to_csv(cl_filename[i], sep=',')
 		

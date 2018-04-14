@@ -5,12 +5,12 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 def deNormalizeCentroids(data, centroids):
-	#denormalize centroid
+	#De-normalize centroid
 	max = (data.iloc[:,1:5]).max(axis=0)
 	min = (data.iloc[:,1:5]).min(axis=0)
 	centroids_df = pd.DataFrame(data = centroids[0:,0:],columns = ['Latitude','Longitude','Depth','Magnitude'])
 	denorm_centroids_df = (centroids_df*(max-min))+min
-	print(denorm_centroids_df)
+	print('\n[De-Normalized Centroids] for 3 Clusters: \n',denorm_centroids_df)
 	return denorm_centroids_df
 
 def subplot(df,label,centroids, num_clusters):

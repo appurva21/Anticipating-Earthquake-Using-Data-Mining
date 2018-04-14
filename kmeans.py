@@ -1,5 +1,6 @@
 #kmeans
 import numpy as np
+import pandas as pd
 from copy import deepcopy
 
 def dist(a, b, ax=1):
@@ -13,7 +14,6 @@ def k_Means(k, X):
 	C_3 = np.random.uniform(0, np.max(X), size=k)
 	C_4 = np.random.uniform(0, np.max(X), size=k)
 	C = np.array(list(zip(C_1,C_2,C_3,C_4)), dtype=np.float32)
-	#print("Random:",C)
 
 	C_old = np.zeros(C.shape)
 	clusters = np.zeros(len(X))
@@ -28,7 +28,8 @@ def k_Means(k, X):
 			points = [X[j] for j in range(len(X)) if clusters[j] == i]
 			C[i] = np.mean(points, axis=0)
 		error = dist(C, C_old, None)
-	print("\nCentroids:")
-	print(*C, sep="\n")
+	c_df = pd.DataFrame(data = C[0:,0:],columns = ['Latitude','Longitude','Depth','Magnitude'])
+	print('\n[Normalized Centroids] for 3 Clusters: \n',c_df)
+	#print(*C, sep="\n")
 	return clusters,C
 

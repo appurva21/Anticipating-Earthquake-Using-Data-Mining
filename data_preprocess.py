@@ -10,6 +10,7 @@ def get_dataset(filename):
 	year['Date'] = data['Date']
 	year = np.array(year)
 	temp = []
+	
 	#converting date in proper format
 	for row in year:
 		for item in row:
