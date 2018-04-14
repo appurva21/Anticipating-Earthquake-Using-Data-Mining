@@ -1,0 +1,51 @@
+,antecedants,consequents,support,confidence
+0,frozenset({'SH'}),frozenset({'Q3'}),0.9975821362537335,0.9629312802965497
+1,frozenset({'Q3'}),frozenset({'SH'}),0.9606030436637747,1.0
+2,frozenset({'SH'}),frozenset({'DepthHigh'}),0.9975821362537335,0.9644995722840034
+3,frozenset({'DepthHigh'}),frozenset({'SH'}),0.9645854074811548,0.9974933647891477
+4,frozenset({'SH'}),frozenset({'MagnitudeLow'}),0.9975821362537335,0.9024807527801539
+5,frozenset({'MagnitudeLow'}),frozenset({'SH'}),0.9024320864741857,0.9976359338061467
+6,frozenset({'DepthHigh'}),frozenset({'Q3'}),0.9645854074811548,0.9591565909761134
+7,frozenset({'Q3'}),frozenset({'DepthHigh'}),0.9606030436637747,0.9631329582469649
+8,frozenset({'MagnitudeLow'}),frozenset({'Q3'}),0.9024320864741857,0.9717888100866825
+9,frozenset({'Q3'}),frozenset({'MagnitudeLow'}),0.9606030436637747,0.912940479715724
+10,frozenset({'DepthHigh'}),frozenset({'MagnitudeLow'}),0.9645854074811548,0.9016514302565616
+11,frozenset({'MagnitudeLow'}),frozenset({'DepthHigh'}),0.9024320864741857,0.9637509850275808
+12,"frozenset({'SH', 'DepthHigh'})",frozenset({'Q3'}),0.9621675437348883,0.9615668883961568
+13,"frozenset({'SH', 'Q3'})",frozenset({'DepthHigh'}),0.9606030436637747,0.9631329582469649
+14,"frozenset({'DepthHigh', 'Q3'})",frozenset({'SH'}),0.9251884511449296,1.0
+15,frozenset({'SH'}),"frozenset({'DepthHigh', 'Q3'})",0.9975821362537335,0.9274308525805532
+16,frozenset({'DepthHigh'}),"frozenset({'SH', 'Q3'})",0.9645854074811548,0.9591565909761134
+17,frozenset({'Q3'}),"frozenset({'SH', 'DepthHigh'})",0.9606030436637747,0.9631329582469649
+18,"frozenset({'SH', 'MagnitudeLow'})",frozenset({'Q3'}),0.9002986772863035,0.9740916271721959
+19,"frozenset({'SH', 'Q3'})",frozenset({'MagnitudeLow'}),0.9606030436637747,0.912940479715724
+20,"frozenset({'MagnitudeLow', 'Q3'})",frozenset({'SH'}),0.876973403498791,1.0
+21,frozenset({'SH'}),"frozenset({'MagnitudeLow', 'Q3'})",0.9975821362537335,0.8790989449672084
+22,frozenset({'MagnitudeLow'}),"frozenset({'SH', 'Q3'})",0.9024320864741857,0.9717888100866825
+23,frozenset({'Q3'}),"frozenset({'SH', 'MagnitudeLow'})",0.9606030436637747,0.912940479715724
+24,"frozenset({'SH', 'DepthHigh'})",frozenset({'MagnitudeLow'}),0.9621675437348883,0.90169992609017
+25,"frozenset({'SH', 'MagnitudeLow'})",frozenset({'DepthHigh'}),0.9002986772863035,0.9636650868878357
+26,"frozenset({'DepthHigh', 'MagnitudeLow'})",frozenset({'SH'}),0.8697198122599915,0.9975470155355682
+27,frozenset({'SH'}),"frozenset({'DepthHigh', 'MagnitudeLow'})",0.9975821362537335,0.8696891930424864
+28,frozenset({'DepthHigh'}),"frozenset({'SH', 'MagnitudeLow'})",0.9645854074811548,0.8994396933058095
+29,frozenset({'MagnitudeLow'}),"frozenset({'SH', 'DepthHigh'})",0.9024320864741857,0.9613869188337274
+30,"frozenset({'DepthHigh', 'MagnitudeLow'})",frozenset({'Q3'}),0.8697198122599915,0.970727718724448
+31,"frozenset({'DepthHigh', 'Q3'})",frozenset({'MagnitudeLow'}),0.9251884511449296,0.9125288239815526
+32,"frozenset({'MagnitudeLow', 'Q3'})",frozenset({'DepthHigh'}),0.876973403498791,0.9626986701265001
+33,frozenset({'DepthHigh'}),"frozenset({'MagnitudeLow', 'Q3'})",0.9645854074811548,0.8752580359775877
+34,frozenset({'MagnitudeLow'}),"frozenset({'DepthHigh', 'Q3'})",0.9024320864741857,0.9355397951142632
+35,frozenset({'Q3'}),"frozenset({'DepthHigh', 'MagnitudeLow'})",0.9606030436637747,0.8788865857269765
+36,"frozenset({'SH', 'DepthHigh', 'MagnitudeLow'})",frozenset({'Q3'}),0.8675864030721092,0.9731147540983606
+37,"frozenset({'SH', 'DepthHigh', 'Q3'})",frozenset({'MagnitudeLow'}),0.9251884511449296,0.9125288239815526
+38,"frozenset({'SH', 'MagnitudeLow', 'Q3'})",frozenset({'DepthHigh'}),0.876973403498791,0.9626986701265001
+39,"frozenset({'DepthHigh', 'MagnitudeLow', 'Q3'})",frozenset({'SH'}),0.8442611292845967,1.0
+40,"frozenset({'SH', 'DepthHigh'})","frozenset({'MagnitudeLow', 'Q3'})",0.9621675437348883,0.8774575018477457
+41,"frozenset({'SH', 'MagnitudeLow'})","frozenset({'DepthHigh', 'Q3'})",0.9002986772863035,0.9377567140600315
+42,"frozenset({'SH', 'Q3'})","frozenset({'DepthHigh', 'MagnitudeLow'})",0.9606030436637747,0.8788865857269765
+43,"frozenset({'DepthHigh', 'MagnitudeLow'})","frozenset({'SH', 'Q3'})",0.8697198122599915,0.970727718724448
+44,"frozenset({'DepthHigh', 'Q3'})","frozenset({'SH', 'MagnitudeLow'})",0.9251884511449296,0.9125288239815526
+45,"frozenset({'MagnitudeLow', 'Q3'})","frozenset({'SH', 'DepthHigh'})",0.876973403498791,0.9626986701265001
+46,frozenset({'SH'}),"frozenset({'DepthHigh', 'MagnitudeLow', 'Q3'})",0.9975821362537335,0.8463073852295409
+47,frozenset({'DepthHigh'}),"frozenset({'SH', 'MagnitudeLow', 'Q3'})",0.9645854074811548,0.8752580359775877
+48,frozenset({'MagnitudeLow'}),"frozenset({'SH', 'DepthHigh', 'Q3'})",0.9024320864741857,0.9355397951142632
+49,frozenset({'Q3'}),"frozenset({'SH', 'DepthHigh', 'MagnitudeLow'})",0.9606030436637747,0.8788865857269765
