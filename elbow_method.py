@@ -3,9 +3,9 @@ from sklearn.cluster import KMeans
 from pandas.plotting import scatter_matrix
 from matplotlib import pyplot as plt
 
-
+#Elbow Method
 def elbow_method(data):
-	#Elbow Method
+	
 	#plt.rcParams['figure.figsize'] = (16, 9)
 	plt.style.use('ggplot')
 	X = data[['Latitude','Longitude','Depth','Magnitude']]

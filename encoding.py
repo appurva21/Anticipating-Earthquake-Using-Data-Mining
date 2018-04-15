@@ -80,5 +80,5 @@ def write(cluster_map, number_of_clusters):
 	cl_filename = ["Data_Cluster0.csv", "Data_Cluster1.csv", "Data_Cluster2.csv"]
 	for i in range(number_of_clusters):
 		clusters[i].to_csv(cl_filename[i], sep=',')
-		
+		print('Write Complete for Cluster',i,'. File Name: ',cl_filename[i])	
 	return clusters

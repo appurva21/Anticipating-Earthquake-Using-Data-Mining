@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
+#denormalizing centroid for plotting
 def deNormalizeCentroids(data, centroids):
 	#De-normalize centroid
 	max = (data.iloc[:,1:5]).max(axis=0)
@@ -13,6 +14,7 @@ def deNormalizeCentroids(data, centroids):
 	print('\n[De-Normalized Centroids] for 3 Clusters: \n',denorm_centroids_df)
 	return denorm_centroids_df
 
+#plotting graphs in figure
 def subplot(df,label,centroids, num_clusters):
 
 	plotdata = pd.DataFrame()
@@ -57,7 +59,8 @@ def subplot(df,label,centroids, num_clusters):
 		legobj.set_linewidth(4.0)
 	plt.tight_layout()
 	plt.show()
-	
+
+#plotting graphs in multiple figures	
 def plot(df,label,centroids, num_clusters):
 
 	plotdata = pd.DataFrame()
@@ -99,3 +102,5 @@ def plot(df,label,centroids, num_clusters):
 
 			plt.tight_layout()
 			plt.show()
+
+	

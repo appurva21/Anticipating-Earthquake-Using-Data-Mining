@@ -19,9 +19,10 @@ def get_dataset(filename):
 	year = np.asarray(temp)
 	year = pd.DataFrame(data = year,columns = ['Date'])
 	data['Date'] = year['Date'].values
-	print(data.shape)
+	print("Dataset(Rows,Columns): ",data.shape)
 	return data
-	
+
+#normalizing dataset and converting it to np array
 def normalize(data):
 	data_norm = data[['Latitude','Longitude','Depth','Magnitude']].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
 	f1 = data_norm['Latitude'].values
