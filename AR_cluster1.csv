@@ -1,7 +1,0 @@
-,antecedants,consequents,support,confidence
-0,frozenset({'Q2'}),frozenset({'DepthLow'}),0.8431416318302961,0.7481888563520399
-1,frozenset({'DepthLow'}),frozenset({'Q2'}),0.7711148991436341,0.8180741598463118
-2,frozenset({'Q2'}),frozenset({'MagnitudeLow'}),0.8431416318302961,0.8969633759878054
-3,frozenset({'MagnitudeLow'}),frozenset({'Q2'}),0.9006656114290352,0.8396758518652037
-4,frozenset({'MagnitudeLow'}),frozenset({'DepthLow'}),0.9006656114290352,0.7675386221451157
-5,frozenset({'DepthLow'}),frozenset({'MagnitudeLow'}),0.7711148991436341,0.8964885040834408
