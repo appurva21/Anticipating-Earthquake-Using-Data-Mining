@@ -1,3 +1,0 @@
-,antecedants,consequents,support,confidence
-0,frozenset({'MagnitudeLow'}),frozenset({'DepthLow'}),0.8832474715780564,0.8014408221939493
-1,frozenset({'DepthLow'}),frozenset({'MagnitudeLow'}),0.8058551393003605,0.8784092143866131
